@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faça seu Pedido!</title>
+    <link rel="stylesheet" href="/styles/sky/styles.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <h1>Faça seu pedido</h1>
+
+      <section>
+        <article>
+          <span>Quem é você?</span>
+          <input
+            type="text"
+            name="whoisyou"
+            id="whoisyou"
+            placeholder="Escola, Instituição..."
+          />
+        </article>
+
+        <div>
+          <article>
+            <label for="region">Qual sua Região?</label>
+            <select id="region">
+              <option value="">Região:</option>
+              <option value="Norte">Norte</option>
+              <option value="Sul">Sul</option>
+              <option value="Leste">Leste</option>
+              <option value="Oeste">Oeste</option>
+            </select>
+          </article>
+
+          <article>
+            <label for="whoisyou">De onde você é?</label>
+            <select id="whoisyou">
+              <option value="">UF:</option>
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AP">AP</option>
+              <option value="AM">AM</option>
+              <option value="BA">BA</option>
+              <option value="CE">CE</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SP">SP</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+            </select>
+
+            <button id="submit">ENVIAR</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2023 ECOLEARN <a href="../../index.html">Página inicial</a>
+    </footer>
+
+    <script src="/javascript/sky/script.js"></script>
+  </body>
+</html>

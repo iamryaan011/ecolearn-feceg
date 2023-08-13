@@ -1,0 +1,433 @@
+/* CONFIGS GLOBAIS */
+@font-face {
+  font-family: "Arcade";
+  src: url("/assets/fonts/arcadefont.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Arcade";
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* HEADER, MAIN e FOOTER */
+
+/* HEADER */
+header {
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 8rem;
+
+  z-index: 999;
+
+  background-color: #5f94c6;
+}
+
+header nav ul {
+  display: flex;
+
+  flex-direction: row;
+
+  list-style-type: none;
+}
+
+header nav ul > li {
+  margin-right: 2rem;
+}
+
+header nav ul > li a {
+  font-size: 0.6rem;
+
+  text-decoration: none;
+
+  color: #9de3f8;
+
+  text-shadow: 2px 1px 0px #73b5d3;
+}
+
+header nav ul > li:nth-child(3) a {
+  color: #5a89c4;
+  background-color: #9de3f8;
+
+  border-radius: 5px;
+
+  padding: 0.5rem;
+
+  text-shadow: none;
+
+  font-size: 10px;
+
+  box-shadow: 0px 1px 1px 2px #73b5d3;
+}
+
+header nav ul > li:nth-child(3) a:active {
+  box-shadow: 0px 1px 0px 1px #73b5d3;
+}
+
+/* MAIN */
+/* HOME */
+
+main section:nth-child(1) {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background-image: url("/assets/images/florest.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main section:nth-child(1) article {
+  text-align: center;
+
+  padding: 2rem;
+  margin-bottom: 12rem;
+
+  border: 3px dotted #9de3f8;
+}
+
+main section:nth-child(1) article h1 {
+  color: #9de3f8;
+
+  text-shadow: 2px 1px 1px #73b5d3;
+
+  font-size: 3rem;
+
+  cursor: default;
+
+  text-align: center;
+}
+
+main section:nth-child(1) article h2 {
+  color: #9de3f8;
+
+  text-shadow: 2px 1px 1px #73b5d3;
+  font-size: 1rem;
+
+  margin-top: 1rem;
+
+  cursor: default;
+}
+
+/* ABOUT */
+
+main section:nth-child(2) {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background-color: #466343;
+}
+
+main section:nth-child(2) article {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+main section:nth-child(2) article h1 {
+  color: #4e7850;
+
+  text-shadow: 2px 1px 1px #2d482e;
+
+  font-size: 3rem;
+
+  cursor: default;
+
+  text-align: center;
+}
+
+main section:nth-child(2) article h2 {
+  color: #4e7850;
+
+  text-shadow: 2px 1px 1px #2d482e;
+
+  font-size: 1rem;
+
+  margin-top: 1rem;
+
+  cursor: default;
+}
+
+main section:nth-child(2) article p {
+  padding: 2rem;
+  margin: 2rem 0;
+
+  border: 3px solid #4e7850;
+
+  color: #4e7850;
+
+  text-shadow: 2px 1px 1px #2d482e;
+
+  box-shadow: 2px 2px 1px 0px #2d482e;
+
+  width: 500px;
+
+  line-height: 1.25rem;
+}
+
+/* CONTACT */
+main section:nth-child(3) {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: #3b3028;
+  background-image: url("/assets/images/grass-and-dirt.png");
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+}
+
+main section:nth-child(3) h1 {
+  color: #4e7850;
+
+  text-shadow: 2px 1px 1px #2d482e;
+
+  font-size: 3rem;
+
+  cursor: default;
+
+  text-align: center;
+
+  margin: 3rem 0;
+}
+
+main section:nth-child(3) form {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+main section:nth-child(3) form input[type="text"],
+textarea {
+  width: 100%;
+
+  margin-bottom: 1.5rem;
+
+  border: 3px solid #4e7850;
+
+  box-shadow: 2px 2px 1px 0px #2d482e;
+
+  background-color: transparent;
+
+  padding: 1rem;
+
+  font-size: 0.8rem;
+
+  color: #4e7850;
+
+  resize: none;
+}
+
+main section:nth-child(3) form input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+}
+
+main section:nth-child(3) form input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #4e785059;
+}
+
+main section:nth-child(3) form button {
+  color: #4e7850;
+  background-color: transparent;
+
+  border-radius: 5px;
+
+  padding: 0.5rem;
+
+  text-shadow: none;
+
+  font-size: 10px;
+
+  box-shadow: 0px 1px 1px 2px #2d482e;
+
+  cursor: pointer;
+
+  outline: none;
+
+  border: 3px solid #4e7850;
+
+  padding: 0.5rem;
+
+  position: relative;
+  left: 45%;
+}
+
+main section:nth-child(3) form button:active {
+  box-shadow: 0px 1px 0px 1px #2d482e;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem;
+
+  color: #4e7850;
+
+  text-shadow: 2px 1px 1px #2d482e;
+
+  background-color: #3b3028;
+  background-image: url("/assets/images/dirt.png");
+
+  font-size: 0.8rem;
+
+  text-align: center;
+
+  cursor: default;
+}
+
+footer a {
+  color: #4e7850;
+
+  text-shadow: 2px 1px 1px #2d482e;
+
+  text-decoration: none;
+}
+
+footer a:hover {
+  transform: scale(1.05);
+  transition: .6;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 758px) {
+  /* HOME */
+  main section:nth-child(1) article h1 {
+    font-size: 2.5rem;
+  }
+
+  main section:nth-child(2) article h1 {
+    font-size: 2.5rem;
+  }
+
+  main section:nth-child(3) h1 {
+    font-size: 2.5rem;
+  }
+
+  main section:nth-child(1) article h2 {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 610px) {
+  /* HOME */
+  /* ABOUT */
+  main section:nth-child(2) article p {
+    width: 80%;
+  }
+
+  /* CONTACT */
+  main section:nth-child(3) form input[type="text"],
+  textarea {
+    width: 75%;
+  }
+
+  main section:nth-child(3) form button {
+    position: relative;
+    left: 33%;
+  }
+
+  /* FOOTER */
+
+  footer {
+    font-size: 0.6rem;
+  }
+}
+
+/* EMAIL SUBMIT */
+
+main > div {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("/assets/images/grass-and-dirt.png");
+  background-color: #3b3028;
+
+  height: 100vh;
+}
+
+main div > p {
+  color: #4e7850;
+
+  text-shadow: 2px 1px 1px #2d482e;
+
+  font-size: 1.5rem;
+
+  cursor: default;
+
+  text-align: center;
+
+  width: 80vw;
+
+  line-height: 2rem;
+}
+
+main div > a {
+  color: #4e7850;
+  background-color: transparent;
+
+  border-radius: 5px;
+
+  padding: 0.5rem;
+
+  text-shadow: none;
+
+  font-size: 1rem;
+
+  box-shadow: 0px 1px 1px 2px #2d482e;
+
+  cursor: pointer;
+
+  outline: none;
+
+  border: 3px solid #4e7850;
+
+  padding: 0.5rem;
+  margin-top: 1rem;
+
+  text-decoration: none;
+}

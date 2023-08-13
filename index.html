@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Learn - Comece desde cedo!</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+
+          <li>
+            <a href="#about">Sobre</a>
+          </li>
+
+          <li>
+            <a href="#contact">CONTATO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <article>
+          <h1>ECO LEARN</h1>
+          <h2>Comece desde cedo!</h2>
+        </article>
+      </section>
+
+      <section id="about">
+        <article>
+          <h1>Sobre nós</h1>
+          <h2>O que somos ?</h2>
+
+          <p>
+            Somos um startup que busca conscientizar as crianças através de
+            jogos eletrônicos. Buscamos mostrar que os jogos eletrônicos podem
+            sim terem fins educacionais e tornar o ato de reciclar algo
+            rotineiro na vida das nossas crianças. Comece desde cedo, faça a
+            diferença!
+          </p>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h1>CONTATO</h1>
+
+        <form
+          action="https://formsubmit.co/iamryaan011@gmail.com"
+          method="post"
+        >
+          <input type="text" name="name" id="name" placeholder="Nome" />
+          <input type="text" name="email" id="email" placeholder="E-mail" />
+
+          <!-- Redirect -->
+          <input
+            type="hidden"
+            name="_next"
+            value="https://ecolearn-feceg.vercel.app/index.html"
+          />
+
+          <!-- Remove Captcha -->
+          <input type="hidden" name="_captcha" value="false" />
+
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Mensagem"
+          ></textarea>
+
+          <button id="submit">ENVIAR</button>
+        </form>
+      </section>
+
+      <footer>© 2023 ECOLEARN <a href="pages/sky/index.html">Faça seu pedido</a></footer>
+    </main>
+
+    <script src="/javascript/script.js"></script>
+  </body>
+</html>
