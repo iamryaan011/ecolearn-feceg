@@ -1,6 +1,6 @@
 This is a HTML, CSS and JavaScript project.
 
-##Introduction
+## Introduction
 A website that aims at sustainability.
 
 ## Vercel
